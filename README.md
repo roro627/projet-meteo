@@ -17,5 +17,5 @@ Pour personnaliser la localisation et faire fonctionner l'application au premier
 ## Notes
 Ce programme ne possède aucune gestion d'erreur tel que le manque de reseau etc.  
   
-Si une est rencontré vous pouvez me contacter  
+Si une erreur est rencontrée vous pouvez me contacter  
 Discord : rørø#2845
