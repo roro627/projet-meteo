@@ -177,38 +177,38 @@ draw.text((1081.0, 196.0), "SOIR", fill=text_color, font=font)
 
 #température reel matin
 font1 = ImageFont.truetype(str(relative_to_assets('font\\Inter-Thin.otf')), size=38)
-draw.text((812.0, 78.0), str(temp_today[0]), fill=text_color, font=font1)
+draw.text((812.0, 78.0), f"{str(temp_today[0])}°", fill=text_color, font=font1)
 
 font2 = ImageFont.truetype(str(relative_to_assets('font\\Inter-Thin.otf')), size=16)
 draw.text((812.0, 124.0), "RESSENTIE", fill=text_color, font=font2)
 
 #températre ressentie matin
 font3 = ImageFont.truetype(str(relative_to_assets('font\\Inter-Thin.otf')), size=24)
-draw.text((812.0, 143.0), str(temp_today[4]), fill=text_color, font=font3)
+draw.text((812.0, 143.0), f"{str(temp_today[4])}°", fill=text_color, font=font3)
 
 #température reel midi
-draw.text((1081.0, 78.0), str(temp_today[1]), fill=text_color, font=font1)
+draw.text((1081.0, 78.0), f"{str(temp_today[1])}°", fill=text_color, font=font1)
 
 draw.text((1081.0, 124.0), "RESSENTIE", fill=text_color, font=font2)
 
 #températre ressentie midi
-draw.text((1081.0, 143.0), str(temp_today[5]), fill=text_color, font=font3)
+draw.text((1081.0, 143.0), f"{str(temp_today[5])}°", fill=text_color, font=font3)
 
 #température reel aprem
-draw.text((812.0, 229.0), str(temp_today[2]), fill=text_color, font=font1)
+draw.text((812.0, 229.0), f"{str(temp_today[2])}°", fill=text_color, font=font1)
 
 draw.text((812.0, 274.0), "RESSENTIE", fill=text_color, font=font2)
 
 #températre ressentie aprem
-draw.text((812.0, 294.0), str(temp_today[6]), fill=text_color, font=font3)
+draw.text((812.0, 294.0), f"{str(temp_today[6])}°", fill=text_color, font=font3)
 
 #température reel soir
-draw.text((1081.0, 229.0), str(temp_today[3]), fill=text_color, font=font1)
+draw.text((1081.0, 229.0), f"{str(temp_today[3])}°", fill=text_color, font=font1)
 
 draw.text((1081.0, 274.0), "RESSENTIE", fill=text_color, font=font2)
 
 #températre ressentie soir
-draw.text((1081.0, 294.0), str(temp_today[7]), fill=text_color, font=font3)
+draw.text((1081.0, 294.0), f"{str(temp_today[7])}°", fill=text_color, font=font3)
 
 #date du jour
 font = ImageFont.truetype(str(relative_to_assets('font\\Inter-Light.otf')), size=42)
@@ -263,7 +263,7 @@ draw.text((808.0, 624.0), "RESSENTIE", fill=text_color, font=font3)
 draw.text((974.0, 600.0), jours[4], fill=text_color, font=font4)
 
 #température actuel
-font = ImageFont.truetype(str(relative_to_assets('font\\Inter-ThinItalic.otf')), size=127)
+font = ImageFont.truetype(str(relative_to_assets('font\\Inter-ThinItalic.otf')), size=110)
 draw.text((318.0, 53.0), f"{temp_actuel}°", fill=text_color, font=font)
 
 draw_textes = ImageTk.PhotoImage(background_texte)
