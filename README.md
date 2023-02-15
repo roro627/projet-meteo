@@ -1,7 +1,7 @@
 # Projet météo python
 
 Cette interface méteo réalisé en python a était crée avec tkinter. Ce projet permet de voir la météo actuel et futur. Les données météo sont collectées par l'api de open-meteo.com, l'interface a était crée sur [figma](https://www.figma.com/file/K40C7g1iwF7TRup4T8VJ2m/meteo-app?node-id=0%3A1&t=rqOlI5w4Ve6aj1QQ-1 "") puis converti avec tkinter-designer et retravaillé manuellement pour obtenir au final ce design :  
-![.](https://github.com/roro627/projet-meteo/blob/ressource_readme/preview_ui.jpg?raw=true)
+![design](https://ibb.co/VpddLQq)
 ## Installation
 
 Pour éxécuter le programme veuillez installer les prérequis :
