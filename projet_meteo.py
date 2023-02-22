@@ -8,6 +8,9 @@ from pathlib import Path
 from tkinter import *
 from PIL import Image,ImageTk, ImageDraw, ImageFont
 
+from meteo.position import get_lat_lon_from_ip
+
+
 #Config
 def get_config(): #obtenir parametres pour requête
 	res = []
@@ -16,10 +19,7 @@ def get_config(): #obtenir parametres pour requête
 	lat = data['latitude']
 	lng = data['longitude']
 	if lat == 0 and lng == 0:
-		lres = requests.get("http://ip-api.com/json/?fields=lat,lon")
-		rd = lres.json()
-		lat = rd["lat"]
-		lng = rd["lon"]
+		lat, lon = get_lat_lon_from_ip()
 	res.append(lat)
 	res.append(lng)
 	file.close()
