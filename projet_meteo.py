@@ -8,8 +8,10 @@ from pathlib import Path
 from tkinter import *
 from PIL import Image,ImageTk, ImageDraw, ImageFont
 
-from meteo.position import get_lat_lon_from_ip
-
+def get_lat_lon_from_ip():
+    lres = requests.get("http://ip-api.com/json/?fields=lat,lon")
+    rd = lres.json()
+    return rd["lat"], rd["lon"]
 
 #Config
 def get_config(): #obtenir parametres pour requête
