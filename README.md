@@ -18,4 +18,4 @@ L'application au premier lancement détectera la longitude et la latitude automa
 Ce programme ne possède aucune gestion d'erreur tel que le manque de réseau etc.  
   
 Si une erreur est rencontrée vous pouvez me contacter  
-Discord : rørø#2845
+Discord : rørø#2110
