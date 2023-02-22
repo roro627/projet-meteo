@@ -11,7 +11,7 @@ Pour exécuter le programme veuillez installer les prérequis :
 ```
     
 ## Usage
-Pour personnaliser la localisation et faire fonctionner l'application au premier lancement, modifié le fichier 'config.json' la longitude et la latitude de votre ville ([cliquez ici](https://www.coordonnees-gps.fr/ "") pour l'obtenir facilement)
+L'application au premier lancement détectera la longitude et la latitude automatiquement grâce à votre ip, si toutefois vous voulez la changer vous pouvez modifier le fichier 'config.json' la longitude et la latitude de votre ville ([cliquez ici](https://www.coordonnees-gps.fr/ "") pour l'obtenir facilement)
 ![](https://i.ibb.co/zrXFX1p/get-coord.jpg)  
 ![](https://i.ibb.co/XpyCNMs/config-exemple.jpg) 
 ## Notes
