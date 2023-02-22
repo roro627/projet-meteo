@@ -1,5 +1,7 @@
 import json
 import datetime
+import os
+import sys
 from datetime import date
 import requests
 from pathlib import Path
@@ -104,14 +106,18 @@ ASSETS_PATH = OUTPUT_PATH / Path("./assets")
 
 
 def relative_to_assets(path):
-    return ASSETS_PATH / Path(path)
+	path = os.path.join(*path.split("\\"))
+	return ASSETS_PATH / Path(path)
 
 
 window = Tk()
 window.geometry("1280x720")
 window.configure(bg = "#111111")
 window.title("Projet météo")
-window.iconbitmap(relative_to_assets("application-meteo.ico"))
+if ( sys.platform.startswith('win')):
+	window.iconbitmap(relative_to_assets("application-meteo.ico"))
+else:
+	window.iconbitmap(f"@{relative_to_assets('application-meteo.xbm')}")
 
 
 canvas = Canvas(
@@ -305,13 +311,13 @@ canvas.create_rectangle(
 
 #reduire la taille de l'image
 def resize(nom,taille):
-	if taille == 1:#images en haut à droite 
+	if taille == 1:#images en haut à droite
 		taille=65
-	else: #images en haut à gauche 
+	else: #images en haut à gauche
 		taille = 105
 	with Image.open(relative_to_assets(f'{nom}.png')) as im:
 	    resized = im.resize((taille,taille))
-	return resized #image avec les bonnes dimension 
+	return resized #image avec les bonnes dimension
 
 
 #image meteo actuel
