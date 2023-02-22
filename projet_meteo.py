@@ -13,8 +13,15 @@ def get_config(): #obtenir parametres pour requête
 	res = []
 	file = open(f'{Path(__file__).parent}/config.json','r') #config.json
 	data = json.load(file)
-	res.append(data['latitude'])
-	res.append(data['longitude'])
+	lat = data['latitude']
+	lng = data['longitude']
+	if lat == 0 and lng == 0:
+		lres = requests.get("http://ip-api.com/json/?fields=lat,lon")
+		rd = lres.json()
+		lat = rd["lat"]
+		lng = rd["lon"]
+	res.append(lat)
+	res.append(lng)
 	file.close()
 	date =datetime.date.today()
 	res.append(date)
